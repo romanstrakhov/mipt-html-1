@@ -1,0 +1,16 @@
+{
+  "name": "gfear-mipt-html1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roman Strakhov <roman@strakhov.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "pug": "^2.0.1"
+  }
+}

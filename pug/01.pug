@@ -1,0 +1,20 @@
+html
+	header
+	body
+		section
+			header
+			article
+				hgroup
+					h1
+					h2
+				p
+				address				
+			footer
+		section(itemscope, itemtype="http://schema.org/Person") // микроразметка
+			| H! My name is
+			span(itemprop="givenName") Name
+			span(itemprop="familyName") Surname
+			| .
+			| I work in ...
+
+
