@@ -48,4 +48,16 @@ FOIT — flash of invisible text / вспышка невидимого текс�
 
 font: [variant] [style] [weight] size [/ line-height] family;
 
+text-decoration: underline | line-through | overline
+text-transofrm: capitalize | lowercase | uppercase
+text-indent
 
+text-shadow: offset-x offset-y [blur-radius] [color], [ ... ];
+
+column-count
+column-gap
+column-rule: 2px solid blue;
+column-width
+column-span: all
+
+text-overflow: hidden | clip | ellipsis(...)
