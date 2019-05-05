@@ -81,6 +81,7 @@ transition-timing-function: linear | ease* | cubic-bezier(a, b, c, d) | ...
 
 ## Анимации
 
+````css
 @keyframes animationName {
   from | 0% {
 
@@ -109,4 +110,4 @@ transition-timing-function: linear | ease* | cubic-bezier(a, b, c, d) | ...
 .animated:hover {
   animation-play-state: paused;
 }
-
+````

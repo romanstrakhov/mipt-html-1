@@ -1,0 +1,147 @@
+/*> Include font face */
+@font-face {
+    font-family: 'Old English Text MT';
+    src: url('../fonts/OldEnglishTextMT.woff2') format('woff2'),
+    url('../fonts/OldEnglishTextMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Six Caps';
+    src: url('../fonts/SixCaps.woff2') format('woff2'),
+    url('../fonts/SixCaps.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../fonts/SpaceMono-Bold.woff2') format('woff2'),
+    url('../fonts/SpaceMono-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Racing Sans One';
+    src: url('../fonts/RacingSansOne-Regular.woff2') format('woff2'),
+    url('../fonts/RacingSansOne-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Farsan';
+    src: url('../fonts/Farsan-Regular.woff2') format('woff2'),
+    url('../fonts/Farsan-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*< Include font face */
+
+/* Set default font-size for document */
+body {
+    font-size: 16px;
+}
+
+/*> Header styling */
+.header {
+    text-align: center;
+}
+.header__title {
+    font: bold 5.1rem/5.1rem 'Old English Text MT', 'Times New Roman', serif;
+}
+
+.header__weather-title {
+    font: bold 1.17rem "SpaceMono", monospace;
+}
+
+.header__weather-text {
+    text-align: justify;
+    font-size: .8rem;
+    line-height: .88rem;
+}
+
+/*< Header styling */
+
+/*> Sub header styling */
+.sub-header__copyright {
+    font-size: .6rem;
+}
+/*< Sub header styling */
+
+
+.left-column .article__title,
+.right-column .article__title {
+    font: bold 3.20rem 'Six Caps', sans-serif;
+}
+
+.left-column .article__subtitle,
+.right-column .article__subtitle {
+    font: bold 1.17rem "Times New Roman", serif;
+    text-align: center;
+}
+
+.right-column .article__add-text {
+    font-size: .8rem;
+    font-style: italic;
+    text-align: justify;
+    text-indent: 2ex;
+}
+
+.right-column .article__image-caption {
+    font-size: .8rem;
+    text-decoration: underline;
+}
+
+.article__author {
+    font-size: .8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-indent: 2ex;
+    font-size: .8rem;
+    text-align: justify;
+}
+
+.article__continue {
+    font-size: .8rem;
+    font-style: italic;
+    text-align: center;
+}
+.main-photo__caption {
+    font-size: .7rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.main-photo__title {
+    font-weight: bold;
+}
+.main-photo__desc {
+    font-size: .8rem;
+}
+
+.multicolumn__left .article__title {
+    font: italic bold 2rem 'Racing Sans One', sans-serif;
+}
+
+.multicolumn__right .article__title {
+    font: italic bold 2.3rem 'Farsan', sans-serif;
+}
+
+.multicolumn .article__content p {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+}
+
+
+/*< Center section styling */

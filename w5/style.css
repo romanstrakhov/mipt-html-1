@@ -1,0 +1,47 @@
+body {
+  margin: 20px;
+
+}
+
+.square {
+
+  width: 150px;
+  height: 150px;
+  background-color: #f00;
+
+}
+
+.animation {
+
+  animation-name: animation; 
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+  
+}
+
+.animation:hover {
+
+  background-color: #ff0;
+  transition-duration: 500ms;
+
+}
+
+@keyframes animation {
+  from {
+
+  }
+  25% {
+    transform: translate(100px, 0);
+
+  }
+  50% {
+    transform: translate(0, 100%);
+  }
+  75%, to {
+    transform: rotate(145deg) scale(2);
+    
+  }
+}
