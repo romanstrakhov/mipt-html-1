@@ -2,34 +2,40 @@
 
 ## Базовые свойства оформления текста
 
+````css
 text-decoration: {underline|overline|line-through}
 text-transform: {capitlize|lowercase|uppercase}
 text-indent: {..}
 color: {..} -> currentColor
 text-shadow: offset-x offset-y [blur-radius=0] [color=currentColor]
+````
 
 ## Многоколоночность
 
+````css
 column-count: {..}
 column-gap: {..}
 column-rule: width line-type color
 column-width: {..}
 column-span: {all|..}
+````
 
 ## Переполнение текста
 
+````css
 overflow: hidden
 text-overflow: {clip|ellipsis} — в таблицах многоточие, нужно добавить title
 
 &shy; + hyphens: manual
-<wbr>
+
+/* <wbr> */
 word-break: {normal|break-all|keep-all}
 
 white-space: {nowrap|pre|pre-line|pre-wrap}
 
-::first-line — font, word/letter-spacing, text, color, background, vertical-align
-
-::first-letter + margin, padding, border
+::first-line /* font, word/letter-spacing, text, color, background, vertical-align */
+::first-letter /* margin, padding, border */
+````
 
 ````css
 @font-face {
@@ -43,19 +49,21 @@ white-space: {nowrap|pre|pre-line|pre-wrap}
 
 # Week 5 — CSS Animations
 
+````css
 transform: translate( X, Y ) | translateX( X ) | translateY( Y )
 transform: scale( k ) | scale( X, Y ) | scaleX( X ) | scaleY( Y )
 transform: rotate( a ) /* turn, deg, grad, rad */
 transform: skew( X, Y ) | skewX( X ) | skewY( Y ) /* deg etc. */
 transform: matrix(a,b,c,d,e)
 transform: matrix(a,b,c,d,tx,ty)
+/*
 a: scaleX = 1
 b: skewX = 0
 c: skewY = 0
 d: scaleY = 1
 tx: translateX = 0
 ty: translateY = 0
-
+*/
 
 transform-origin: left | right | top | bottom | center | (x%, y%)
 
@@ -69,15 +77,17 @@ perspective-origin: X=50% Y=50%
 
 transform-style: flat | preserve-3d /* default: flat */
 backface-visibility: visible | hidden /* default: visible */
+````
 
 ## Переходы
 
+````css
 transition: property duration [timing-function] [delay]
 transition-property: transform, background-color, ...
 transition-duration: .3s, 300ms, ...
 transition-delay: ..., ..., ...
 transition-timing-function: linear | ease* | cubic-bezier(a, b, c, d) | ...
-
+````
 
 ## Анимации
 
